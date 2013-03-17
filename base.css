@@ -10,7 +10,7 @@ body {
 
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #eaeaea url('bg.png');
+  background-color: #000;
   color: #4d4d4d;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -35,7 +35,7 @@ body {
 /*  width: 800px;
   height: 500px;*/
   float: left;
-  border: 2px solid #aa0; 
+  border: 2px solid #FFF; 
   margin: 10px;
 }
 
