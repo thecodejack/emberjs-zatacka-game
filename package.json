@@ -1,0 +1,22 @@
+{
+  "name": "zatacka",
+  "version": "0.0.1",
+  "description": "'Zatacka game using EmberJS'",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": "",
+  "author": "Adi Srikanth",
+  "license": "",
+  "devDependencies": {
+    "grunt": "0.4.0rc5",
+    "grunt-neuter": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-ember-templates": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "~0.1.3"
+  }
+}

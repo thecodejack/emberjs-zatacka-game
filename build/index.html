@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Zatacka(TRON)</title>
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+<div id="Zatacka" tabindex="0">
+<div id="gameHolder">
+<canvas id="gameCanvas" width="1000" height="600"></canvas>
+</div>
+ <section id="emberRoot"></section>
+</div>
+ 
+
+  <footer id="info">
+   
+  </footer>
+  <script type="text/x-handlebars" data-template-name="application">
+    <h1>Players</h1>
+    {{outlet sidepanel}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="zatacka">
+    {{view Game.PlayersView}}
+    <button class="startGame">Start Game</button>
+    <button class="resetGame">Reset Game</button>
+  </script>
+
+    
+
+
+  <!-- 
+    load the ember application. This file comes from the files in /app
+    as part of the grunt build process
+  -->
+  <script src="application.js"></script>
+</body>
+</html>
