@@ -10,11 +10,11 @@ Game.PlayRoute = Ember.Route.extend({
   },
 
   renderTemplate: function() {
-    /*this.render('zatacka',{
+    this.render('zatacka',{
       into: 'application',          // the template to render into
       outlet: 'sidepanel'       // the name of the outlet in that template
       //controller: 'blogPost'  // the controller to use for the template
-    });*/
+    });
   },
 
   /*

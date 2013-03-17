@@ -37600,11 +37600,11 @@ Game.PlayRoute = Ember.Route.extend({
   },
 
   renderTemplate: function() {
-    /*this.render('zatacka',{
+    this.render('zatacka',{
       into: 'application',          // the template to render into
       outlet: 'sidepanel'       // the name of the outlet in that template
       //controller: 'blogPost'  // the controller to use for the template
-    });*/
+    });
   },
 
   /*
@@ -37820,6 +37820,9 @@ Game.PlayersView = Ember.ContainerView.extend({
     didInsertElement : function() {
         this._super();
     }
+});
+Game.ScoreView = Ember.ContainerView.extend({
+    classNames: ['scoreClass']
 });
 Game.ZatackaView = Ember.View.extend({
 	elementId: 'sidePanel',
