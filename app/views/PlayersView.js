@@ -2,20 +2,19 @@ Game.PlayersView = Ember.ContainerView.extend({
     elementId: 'playersPanel',
     anime: null,
     init : function() {
-        var childViews=this.get('childViews');
-        childViews.pushObject(Game.PlayerView.extend({
+        this._super();
+        this.pushObject(Game.PlayerView.create({
         }));
-        childViews.pushObject(Game.PlayerView.extend({
+        this.pushObject(Game.PlayerView.create({
             color:"#F00",
             upKey:107,
             downKey:108
         }));
-        childViews.pushObject(Game.PlayerView.extend({
+        this.pushObject(Game.PlayerView.create({
             color:"#00F",
             upKey:113,
             downKey:119
         }));
-        this._super();
     },
     animate : function() {
         var controller=this.get('controller');
@@ -39,8 +38,5 @@ Game.PlayersView = Ember.ContainerView.extend({
     restartGame : function() {
         //location.reload();
         this.rerender();
-    }.observes('controller.playing'),
-    didInsertElement : function() {
-        this._super();
-    }
+    }.observes('controller.playing')
 });

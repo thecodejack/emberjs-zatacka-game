@@ -113,8 +113,10 @@ Game.PlayerView = Ember.View.extend({
     }.observes('controller.scoreUpdate'),
     didInsertElement : function() {
         this._super();
-        this.$('.keys').html(' ' + String.fromCharCode(this.get('upKey')) + ' / ' + String.fromCharCode(this.get('downKey')));
-        this.$().css('color',this.get('color'));
-        this.move();
+        Ember.run.next(this, function(){
+            this.$('.keys').html(' ' + String.fromCharCode(this.get('upKey')) + ' / ' + String.fromCharCode(this.get('downKey')));
+            this.$().css('color',this.get('color'));
+            this.move();
+        });
     }
 });
